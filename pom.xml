@@ -5,14 +5,23 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.2</version>
+        <version>3.5.10</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>tg.zhenshen</groupId>
     <artifactId>bot-utils</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <name>bot-utils</name>
     <description>This library implements state management via Redis. Containers for сommands, callbacks, and states are also implemented.</description>
+
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/ZhenShenITIS/bots-utils</url>
+        </repository>
+    </distributionManagement>
     <url/>
     <licenses>
         <license/>
@@ -33,7 +42,7 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webmvc</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
